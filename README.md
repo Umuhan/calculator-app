@@ -122,9 +122,9 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- **[Add navigation]**
+- **[Add about page]**
+- **[Add contact page]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
