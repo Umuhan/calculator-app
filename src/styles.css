@@ -23,7 +23,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(176, 207, 176);
+  background: aliceblue;
 }
 
 main {
@@ -57,7 +57,7 @@ main {
 }
 
 button {
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
