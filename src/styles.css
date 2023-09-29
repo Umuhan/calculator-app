@@ -9,21 +9,12 @@ html {
 }
 
 body {
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    "Roboto",
-    "Oxygen",
-    "Ubuntu",
-    "Cantarell",
-    "Fira Sans",
-    "Droid Sans",
-    "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(176, 207, 176);
+  background: aliceblue;
 }
 
 main {
@@ -57,7 +48,7 @@ main {
 }
 
 button {
-  font-size: 1.5rem;
+  font-size: 8rem;
   cursor: pointer;
 }
 
