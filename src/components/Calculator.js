@@ -5,8 +5,8 @@ import '../styles.css';
 function Calculator() {
   const [count, setCount] = useState({
     total: 0,
-    next: null,
     operation: null,
+    next: null,
   });
 
   const clickHandler = (button) => {
@@ -17,12 +17,12 @@ function Calculator() {
   return (
     <main className="container">
       <section className="calculator">
-        <header className="header">
+        <header className="header calc">
           {count.total}
           {' '}
-          {count.next}
-          {' '}
           {count.operation}
+          {' '}
+          {count.next}
         </header>
         <button
           className="btn"
