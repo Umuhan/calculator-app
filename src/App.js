@@ -1,9 +1,8 @@
+import React from 'react';
 import Calculator from './components/Calculator';
 
-const App = () => (
+export default function App() {
   <div>
     <Calculator />
-  </div>
-);
-
-export default App;
+  </div>;
+}
