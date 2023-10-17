@@ -9,13 +9,13 @@ const Button = () => (
     <button type="button">+/-</button>
     <button type="button">%</button>
     <button type="button" className="color">
-      <span>&#247;</span>
+      <span>÷</span>
     </button>
     <button type="button">7</button>
     <button type="button">8</button>
     <button type="button">9</button>
     <button type="button" className="color">
-      <span>&#215;</span>
+      <span>x</span>
     </button>
     <button type="button">4</button>
     <button type="button">5</button>
