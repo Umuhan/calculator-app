@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import calculate from "../logic/calculate";
-import "../styles.css";
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
+import '../styles.css';
 
 const Calculator = () => {
   const [count, setCount] = useState({
@@ -18,90 +18,94 @@ const Calculator = () => {
     <main className="container">
       <section className="calculator">
         <header className="header calc">
-          {count.total} {count.operation} {count.next}
+          {count.total}
+          {' '}
+          {count.operation}
+          {' '}
+          {count.next}
         </header>
         <button
           className="btn"
           type="button"
-          onClick={() => clickHandler("AC")}
+          onClick={() => clickHandler('AC')}
         >
           Ac
         </button>
-        <button type="button" onClick={() => clickHandler(" +/-")}>
+        <button type="button" onClick={() => clickHandler(' +/-')}>
           +/-
         </button>
-        <button type="button" onClick={() => clickHandler("%")}>
+        <button type="button" onClick={() => clickHandler('%')}>
           %
         </button>
         <button
           type="button"
           className="color"
-          onClick={() => clickHandler("÷")}
+          onClick={() => clickHandler('÷')}
         >
           ÷
         </button>
-        <button type="button" onClick={() => clickHandler("7")}>
+        <button type="button" onClick={() => clickHandler('7')}>
           7
         </button>
-        <button type="button" onClick={() => clickHandler("8")}>
+        <button type="button" onClick={() => clickHandler('8')}>
           8
         </button>
-        <button type="button" onClick={() => clickHandler("9")}>
+        <button type="button" onClick={() => clickHandler('9')}>
           9
         </button>
         <button
           type="button"
           className="color"
-          onClick={() => clickHandler("x")}
+          onClick={() => clickHandler('x')}
         >
           x
         </button>
-        <button type="button" onClick={() => clickHandler("4")}>
+        <button type="button" onClick={() => clickHandler('4')}>
           4
         </button>
-        <button type="button" onClick={() => clickHandler("5")}>
+        <button type="button" onClick={() => clickHandler('5')}>
           5
         </button>
-        <button type="button" onClick={() => clickHandler("6")}>
+        <button type="button" onClick={() => clickHandler('6')}>
           6
         </button>
         <button
           type="button"
           className="color"
-          onClick={() => clickHandler("-")}
+          onClick={() => clickHandler('-')}
         >
           -
         </button>
-        <button type="button" onClick={() => clickHandler("1")}>
+        <button type="button" onClick={() => clickHandler('1')}>
           1
         </button>
-        <button type="button" onClick={() => clickHandler("2")}>
+        <button type="button" onClick={() => clickHandler('2')}>
           2
         </button>
-        <button type="button" onClick={() => clickHandler("3")}>
+        <button type="button" onClick={() => clickHandler('3')}>
           3
         </button>
         <button
           type="button"
           className="color"
-          onClick={() => clickHandler("+")}
+          onClick={() => clickHandler('+')}
         >
           +
         </button>
         <button
           type="button"
           className="zero"
-          onClick={() => clickHandler("0")}
+          onClick={() => clickHandler('0')}
         >
           0
         </button>
-        <button type="button" onClick={() => clickHandler(".")}>
+        <button type="button" onClick={() => clickHandler('.')}>
           .
         </button>
         <button
           className="btn color"
           type="button"
-          onClick={() => clickHandler("=")}
+          onClick={() => clickHandler('=')}
         >
           =
         </button>
