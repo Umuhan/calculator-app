@@ -1,6 +1,10 @@
-const App = () => (
-  <div className="App">
-    <h1>Hello World!</h1>
-  </div>
-);
-export default App;
+import React from 'react';
+import Calculator from './components/Calculator';
+
+export default function App() {
+  return (
+    <div>
+      <Calculator />
+    </div>
+  );
+}
