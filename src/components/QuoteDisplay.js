@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-export const QuoteDisplay = () => {
+const QuoteDisplay = () => {
   const [quote, setQuote] = useState({
     loading: false,
     error: false,
@@ -11,16 +11,16 @@ export const QuoteDisplay = () => {
       try {
         setQuote((State) => ({ ...State, loading: true }));
         const res = await fetch(
-          "https://api.api-ninjas.com/v1/quotes?category=family",
+          'https://api.api-ninjas.com/v1/quotes?category=family',
           {
             headers: {
-              "X-Api-Key": "iBbkx3sRtVSUUTVrcH90+A==li5LiENpC7ZgNO5z",
+              'X-Api-Key': 'iBbkx3sRtVSUUTVrcH90+A==li5LiENpC7ZgNO5z',
             },
-          }
+          },
         );
 
         if (!res.ok) {
-          throw new Error("Error Occurred...");
+          throw new Error('Error Occurred...');
         }
         const result = await res.json();
 
@@ -35,9 +35,9 @@ export const QuoteDisplay = () => {
     };
     fetchQuotes();
   }, []);
-  let content = "";
-  if (quote.loading) content = "Loading ...";
-  if (quote.error) content = "Error Occurred...";
+  let content = '';
+  if (quote.loading) content = 'Loading ...';
+  if (quote.error) content = 'Error Occurred...';
 
   return (
     <>
@@ -58,3 +58,4 @@ export const QuoteDisplay = () => {
     </>
   );
 };
+export default QuoteDisplay;
