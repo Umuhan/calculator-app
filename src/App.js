@@ -1,12 +1,6 @@
-import React from 'react';
-import Calculator from './components/Calculator';
-import QuoteDisplay from './components/QuoteDisplay';
-
-export default function App() {
-  return (
-    <div>
-      <Calculator />
-      <QuoteDisplay />
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <h1>Hello World!</h1>
+  </div>
+);
+export default App;
