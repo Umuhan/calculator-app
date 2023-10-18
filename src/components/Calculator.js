@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import calculate from "../logic/calculate";
-import "../styles.css";
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
+import '../styles.css';
 
 const Calculator = () => {
   const [count, setCount] = useState({
@@ -14,6 +14,7 @@ const Calculator = () => {
     setCount(output);
   };
 
+  // eslint-disable-next-line
   const Button = ({ label, className }) => (
     <button
       type="button"
@@ -28,7 +29,11 @@ const Calculator = () => {
     <main className="container">
       <section className="calculator">
         <header className="header calc">
-          {count.total} {count.operation} {count.next}
+          {count.total}
+          {' '}
+          {count.operation}
+          {' '}
+          {count.next}
         </header>
         <Button label="AC" />
         <Button label="+/-" />
