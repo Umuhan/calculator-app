@@ -1,8 +1,10 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Calculator from "./components/Calculator";
-import QuoteDisplay from "./components/QuoteDisplay";
-import Home from "./components/Home";
+import React from 'react';
+import {
+  BrowserRouter as Router, Routes, Route, Link,
+} from 'react-router-dom';
+import Calculator from './components/Calculator';
+import QuoteDisplay from './components/QuoteDisplay';
+import Home from './components/Home';
 
 const App = () => (
   <Router>

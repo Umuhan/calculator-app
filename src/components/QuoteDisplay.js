@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 const QuoteDisplay = () => {
   const [quote, setQuote] = useState({
@@ -11,16 +11,16 @@ const QuoteDisplay = () => {
       try {
         setQuote((State) => ({ ...State, loading: true }));
         const res = await fetch(
-          "https://api.api-ninjas.com/v1/quotes?category=family",
+          'https://api.api-ninjas.com/v1/quotes?category=family',
           {
             headers: {
-              "X-Api-Key": "iBbkx3sRtVSUUTVrcH90+A==li5LiENpC7ZgNO5z",
+              'X-Api-Key': 'iBbkx3sRtVSUUTVrcH90+A==li5LiENpC7ZgNO5z',
             },
-          }
+          },
         );
 
         if (!res.ok) {
-          throw new Error("Error Occurred...");
+          throw new Error('Error Occurred...');
         }
         const result = await res.json();
 
@@ -35,13 +35,13 @@ const QuoteDisplay = () => {
     };
     fetchQuotes();
   }, []);
-  let content = "";
-  if (quote.loading) content = "Loading ...";
-  if (quote.error) content = "Error Occurred...";
+  let content = '';
+  if (quote.loading) content = 'Loading ...';
+  if (quote.error) content = 'Error Occurred...';
 
   return (
     <div>
-      <h1 style={{ textAlign: "left" }} className="heading">
+      <h1 style={{ textAlign: 'left' }} className="heading">
         Math Magicians
       </h1>
 
@@ -49,7 +49,6 @@ const QuoteDisplay = () => {
         <p className="error">{content}</p>
       ) : (
         <div className="Container">
-          <h2 className="Header"></h2>
           <p className="loading">{content}</p>
           {quote.loadingData.map((data) => (
             <div className="Text" key={data.id}>

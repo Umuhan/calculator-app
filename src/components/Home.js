@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
 const Home = () => (
   <div>
-    <h1 style={{ textAlign: "left" }} className="math-magic">
+    <h1 style={{ textAlign: 'left' }} className="math-magic">
       Math magicians
     </h1>
     <h4 className="heading">Welcome to our page!</h4>
     <div>
-      <p style={{ textAlign: "left" }} className="lorem">
+      <p style={{ textAlign: 'left' }} className="lorem">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste tempore
         sit dolore corrupti temporibus veritatis rerum commodi perferendis
         eligendi nulla optio repudiandae, similique nihil, inventore, facilis

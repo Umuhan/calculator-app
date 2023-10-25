@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import calculate from "../logic/calculate";
-import "../styles.css";
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
+import '../styles.css';
 
 const Calculator = () => {
   const [count, setCount] = useState({
@@ -27,15 +27,19 @@ const Calculator = () => {
 
   return (
     <div>
-      <h1 style={{ textAlign: "left" }} className="math-magic">
+      <h1 style={{ textAlign: 'left' }} className="math-magic">
         Math Calculator
       </h1>
-      <h4 className="heading">Let's do some math!</h4>
+      <h4 className="heading">Lets do some math!</h4>
 
       <main className="container">
         <section className="calculator">
           <header className="header calc">
-            {count.total} {count.operation} {count.next}
+            {count.total}
+            {' '}
+            {count.operation}
+            {' '}
+            {count.next}
           </header>
           <Button label="AC" />
           <Button label="+/-" />
