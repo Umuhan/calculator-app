@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import calculate from '../logic/calculate';
-import '../styles.css';
+import React, { useState } from "react";
+import calculate from "../logic/calculate";
+import "../styles.css";
 
 const Calculator = () => {
   const [count, setCount] = useState({
@@ -26,36 +26,39 @@ const Calculator = () => {
   );
 
   return (
-    <main className="container">
-      <section className="calculator">
-        <header className="header calc">
-          {count.total}
-          {' '}
-          {count.operation}
-          {' '}
-          {count.next}
-        </header>
-        <Button label="AC" />
-        <Button label="+/-" />
-        <Button label="%" />
-        <Button label="÷" className="color" />
-        <Button label="7" />
-        <Button label="8" />
-        <Button label="9" />
-        <Button label="x" className="color" />
-        <Button label="4" />
-        <Button label="5" />
-        <Button label="6" />
-        <Button label="-" className="color" />
-        <Button label="1" />
-        <Button label="2" />
-        <Button label="3" />
-        <Button label="+" className="color" />
-        <Button label="0" className="zero" />
-        <Button label="." />
-        <Button label="=" className="btn color" />
-      </section>
-    </main>
+    <div>
+      <h1 style={{ textAlign: "left" }} className="math-magic">
+        Math Calculator
+      </h1>
+      <h4 className="heading">Let's do some math!</h4>
+
+      <main className="container">
+        <section className="calculator">
+          <header className="header calc">
+            {count.total} {count.operation} {count.next}
+          </header>
+          <Button label="AC" />
+          <Button label="+/-" />
+          <Button label="%" />
+          <Button label="÷" className="color" />
+          <Button label="7" />
+          <Button label="8" />
+          <Button label="9" />
+          <Button label="x" className="color" />
+          <Button label="4" />
+          <Button label="5" />
+          <Button label="6" />
+          <Button label="-" className="color" />
+          <Button label="1" />
+          <Button label="2" />
+          <Button label="3" />
+          <Button label="+" className="color" />
+          <Button label="0" className="zero" />
+          <Button label="." />
+          <Button label="=" className="btn color" />
+        </section>
+      </main>
+    </div>
   );
 };
 
