@@ -9,7 +9,9 @@
     "jest": "^27.5.1",
     "react-router-dom": "^6.17.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -51,8 +53,6 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "identity-obj-proxy": "^3.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "react-test-renderer": "^18.2.0",
     "style-loader": "^3.3.3",
     "stylelint": "^13.13.1",
