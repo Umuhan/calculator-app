@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <h1
+    className="math-magic"
+    style={
+      Object {
+        "textAlign": "left",
+      }
+    }
+  >
+    Math magicians
+  </h1>
+  <h4
+    className="heading"
+  >
+    Welcome to our page!
+  </h4>
+  <div>
+    <p
+      className="lorem"
+      style={
+        Object {
+          "textAlign": "left",
+        }
+      }
+    >
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste tempore sit dolore corrupti temporibus veritatis rerum commodi perferendis eligendi nulla optio repudiandae, similique nihil, inventore, facilis error eveniet ullam sequi!
+    </p>
+    <p
+      className="lorem"
+    >
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas laudantium blanditiis non consequatur facere! Reiciendis, fuga consequatur officia quam expedita corrupti, aut assumenda et repellat explicabo nisi perferendis corporis iure!
+    </p>
+  </div>
+</div>
+`;
